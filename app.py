@@ -13,7 +13,7 @@ SKILLS = [
 ]
 
 st.title("Skill Gap Analyzer – Resume vs Job Description")
-
+st.info("📄 Upload your resume (PDF) and paste the job description to see your skill match score.")
 resume_file = st.file_uploader("Upload your resume PDF", type=["pdf"])
 
 job_text = st.text_area("Paste Job Description here").lower()
@@ -54,4 +54,6 @@ if st.button("Analyze"):
         st.metric("Skill Match %", f"{score:.1f}%")
 
         df = pd.DataFrame(rows, columns=["Skill","Resume","Job","Status"])
+        df["Resume"] = df["Resume"].map({True:"✅", False:"❌"})
+        df["Job"]    = df["Job"].map({True:"✅", False:"❌"})
         st.dataframe(df)

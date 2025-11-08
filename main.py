@@ -43,5 +43,7 @@ else:
     score = 0
 print("\nSkill Match %", f"{score:.1f}%")    
 df = pd.DataFrame(row, columns=["Skill","Resume","Job","status"])
+df["Resume"] = df["Resume"].map({True:"✅", False:"❌"})
+df["Job"]    = df["Job"].map({True:"✅", False:"❌"})
 print("\n\nRESULT:\n")
 print(df)
