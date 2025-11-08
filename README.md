@@ -1,19 +1,61 @@
-# Skill Gap Analyzer
+# Skill Gap Analyzer – Resume vs Job Requirements
 
-This tool compares a resume with a job description to find:
+A simple AI-style tool that analyzes a resume PDF and compares it against a job description to identify missing skills, matched skills, and overall skill match %.
 
-- which skills match
-- which skills are missing
-- what skills should be learned next
+Built to help job seekers instantly understand where they stand — without manually reading every job posting.
 
-## Goal (MVP)
+### 🚀 Features
+- Upload your resume PDF
+- Paste any Job Description text
+- Detect matching skills using Regex
+- Calculates Skill Match %
+- Categorizes skills into:
+  - ✅ MATCH (you have it + job needs it)
+  - ❌ MISSING (job needs it but resume doesn’t show it)
+  - 🟡 NOT REQUIRED (you have it but job doesn't need it)
+  - – (not relevant)
 
-Use simple text comparison (Python + Pandas) to identify skill gaps
-between candidate resume and job posting.
+### 🧠 Tech Stack
+| Area | Tools Used |
+|------|------------|
+| Language | Python |
+| Skill Detection | Regex |
+| PDF Parsing | PyPDF |
+| UI | Streamlit |
+| Data | Pandas |
 
-## Future upgrades
+### 📊 How to Run Locally
 
-- PDF resume reading
-- Streamlit UI
-- LLM skill explanation
-- auto recommended learning roadmap
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+### 🔥 Why this project is valuable
+This solves a real problem in job search — guessing if you're a match.
+
+It shows:
+- practical regex usage
+- PDF parsing experience
+- understanding of real job data
+- end-to-end execution of a small AI-style product
+
+### 🌐 Deployment (when ready)
+This app can be deployed for free using Streamlit Cloud.
+
+```
+https://share.streamlit.io
+```
+
+---
+
+### ⭐ Future Enhancements
+- LLM skill extraction (OpenAI / Gemini)
+- JD auto-scraper
+- Skill recommendations
+- Resume improvement suggestions
+
+---
+
+### Author
+**Shubham Patial**
