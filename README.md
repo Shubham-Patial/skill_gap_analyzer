@@ -44,7 +44,7 @@ It shows:
 This app can be deployed for free using Streamlit Cloud.
 
 ```
-[https://share.streamlit.io](https://skillgapanalyzer-fvtqqgtpvrp6yubhaenjvh.streamlit.app/)
+https://skillgapanalyzer-fvtqqgtpvrp6yubhaenjvh.streamlit.app/
 ```
 
 ---
